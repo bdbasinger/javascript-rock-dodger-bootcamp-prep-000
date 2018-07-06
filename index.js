@@ -67,15 +67,11 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   // The people that need to know about DwayneJohnson
   // Can know about DwayneJohnson
-  var top = 0
-  rock.style.top = top
-
+  var top = rock.style.top = 0
   
-   // Now that we have a rock, we'll need to append
-   // it to GAME and move it downwards.
-   
-   
-   GAME.appendChild(rock)
+  // Now that we have a rock, we'll need to append
+  // it to GAME and move it downwards.
+  GAME.appendChild(rock)
 
 
 
@@ -87,7 +83,7 @@ function createRock(x) {
     
   function moveRock() {
     // MAKE SURE THIS IS RIGHT
-    rock.style.top = `${bottom -= 2}px`
+    rock.style.top = `${top += 2}px`
 
 
     // End the game if the dodger and rock collide
