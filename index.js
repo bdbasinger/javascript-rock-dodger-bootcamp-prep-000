@@ -133,6 +133,7 @@ function endGame() {
   // Iterate over our collection of rocks and remove ALL of them
   ROCKS.forEach(function(rock) { rock.remove() })
   
+  // Remove the moveDodger event listener
   document.removeEventListener('keydown', moveDodger)
 }
 
