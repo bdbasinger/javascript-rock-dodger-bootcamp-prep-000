@@ -85,9 +85,7 @@ function createRock(x) {
     // MAKE SURE THIS IS RIGHT
     rock.style.top = `${top += 2}px`
 
-
     // End the game if the dodger and rock collide
-    
     if (checkCollision(rock)) {
       return endGame()
     }
