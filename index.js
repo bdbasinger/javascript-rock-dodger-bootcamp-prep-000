@@ -65,7 +65,9 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = rock.style.top = 0
+  // The people that need to know about DwayneJohnson
+  // Can know about DwayneJohnson
+  var top = 0
 
   rock.style.top = top
 
@@ -73,6 +75,7 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
+   
 
 
   /**
