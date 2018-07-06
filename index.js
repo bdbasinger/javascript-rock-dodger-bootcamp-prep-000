@@ -124,7 +124,7 @@ function endGame() {
   START.innerHTML = 'Play Again?'
   START.style.display = 'inline'
   
-  return alert('YOU LOSE!')
+  return alert('You lost : (')
 }
 
 
