@@ -84,15 +84,22 @@ function createRock(x) {
 
     // This function moves the rock. 
     // 2 pixels at a time seems like a good pace
+    
   function moveRock() {
     // MAKE SURE THIS IS RIGHT
     rock.style.top = `${bottom -= 2}px`
-    
-    // If a rock collides with the DODGER,
-    // We should call endGame()
+
+
+    // End the game if the dodger and rock collide
     
     if (checkCollision(rock)) {
       return endGame()
+    }
+    
+    if (top < GAME_HEIGHT) {
+      window.requestAnimationFrame(moveRock)
+    } else {
+      rock.remove()
     }
      
      
