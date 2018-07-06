@@ -135,6 +135,11 @@ function endGame() {
   
   // Remove the moveDodger event listener
   document.removeEventListener('keydown', moveDodger)
+  
+  START.innerHTML = 'Try Again?'
+  START.style.display = 'inline'
+  
+  return alert('You Lost. It was inevitable  : (')
 }
 
 
@@ -142,6 +147,12 @@ function endGame() {
 
 
 function moveDodger(e) {
+  const key = e.which
+  
+  if (LEFT_ARROW, RIGHT_ARROW.indexOf(key) > -1) {
+    e.preventDefault()
+    e.stopPropagation()
+  }
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
