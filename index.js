@@ -108,13 +108,14 @@ function createRock(x) {
 //we should remove the rock from the DOM
   
 
-  // We should kick of the animation of the rock around here
+// We should kick off the animation of the rock around here
+window.requestAnimationFrame(moveRock)
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock)
 
-  // Finally, return the rock element you've created
+// Return DwayneJohnson
   return rock
 }
 
