@@ -68,7 +68,6 @@ function createRock(x) {
   // The people that need to know about DwayneJohnson
   // Can know about DwayneJohnson
   var top = 0
-
   rock.style.top = top
 
   /**
@@ -76,6 +75,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    
+   GAME.appendChild(rock)
 
 
   /**
@@ -87,6 +87,7 @@ function createRock(x) {
     
     // If a rock collides with the DODGER,
     // We should call endGame()
+    
     if (checkCollision(rock)) {
       return endGame()
     }
