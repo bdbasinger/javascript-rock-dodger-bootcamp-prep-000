@@ -51,24 +51,13 @@ function checkCollision(rock) {
     const rockRightEdge = rockLeftEdge + 20;
 
       return (
+        // 
         (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) ||
         (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) ||
         (rockLeftEdge <= dodgerRightEdge && rockRightEdge >= dodgerRightEdge)
         )
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -126,18 +115,6 @@ function createRock(x) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * End the game by clearing `gameInterval`,
  * removing all ROCKS from the DOM,
@@ -146,17 +123,6 @@ function createRock(x) {
  */
 function endGame() {
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -179,15 +145,6 @@ function moveDodger(e) {
 
 
 
-
-
-
-
-
-
-
-
-
 function moveDodgerLeft() {
   // implement me!
   /**
@@ -195,15 +152,6 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -224,17 +172,6 @@ function moveDodgerRight() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /**
  * @param {string} p The position property
  * @returns {number} The position as an integer (without 'px')
@@ -243,16 +180,6 @@ function moveDodgerRight() {
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
