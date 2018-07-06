@@ -98,11 +98,7 @@ function createRock(x) {
       rock.remove()
     }
   }
-  //But if the rock *has* reached the bottom of the GAME,
-  //we should remove the rock from the DOM
   
-
-  // We should kick off the animation of the rock around here
   window.requestAnimationFrame(moveRock)
 
   ROCKS.push(rock)
@@ -125,10 +121,10 @@ function endGame() {
   // Remove the moveDodger event listener
   document.removeEventListener('keydown', moveDodger)
   
-  START.innerHTML = 'Try Again?'
+  START.innerHTML = 'Play Again?'
   START.style.display = 'inline'
   
-  return alert('You Lost. It was inevitable  : (')
+  return alert('YOU LOSE!')
 }
 
 
