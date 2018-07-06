@@ -127,6 +127,11 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  //End the game by clearing the gameInterval
+  clearInterval(gameInterval)
+  
+  // Iterate over our collection of rocks and remove ALL of them
+  ROCKS.forEach(function(rock) { rock.remove() })
 }
 
 
