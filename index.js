@@ -195,16 +195,7 @@ function moveDodgerRight() {
   })
 }
 
-
-
-
-
-
-/**
- * @param {string} p The position property
- * @returns {number} The position as an integer (without 'px')
- */
- 
+ // HMMM... Leave this guy alone
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
 }
