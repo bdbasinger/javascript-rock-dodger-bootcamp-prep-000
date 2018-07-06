@@ -179,6 +179,8 @@ function moveDodgerLeft() {
   })
 }
 
+
+
  // Separate function to parse our px value
 function positionToInteger(p) {
   return parseInt(p.split('px')[0]) || 0
