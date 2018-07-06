@@ -78,12 +78,15 @@ function createRock(x) {
    GAME.appendChild(rock)
 
 
-  /**
-   * This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */
+
+
+
+
+    // This function moves the rock. 
+    // 2 pixels at a time seems like a good pace
   function moveRock() {
-    // implement me!
+    // MAKE SURE THIS IS RIGHT
+    rock.style.top = `${bottom -= 2}px`
     
     // If a rock collides with the DODGER,
     // We should call endGame()
